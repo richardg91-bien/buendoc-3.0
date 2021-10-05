@@ -1,0 +1,25 @@
+GET http://localhost:5000/videos
+
+### create video
+POST http://localhost:5000/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=_RZ-T6TxP7wHello",
+  "title": "la vida es bella",
+  "description": " this is a video"
+}
+
+### GET VIDEO
+GET http://localhost:5000/videos/5f810077ea69c100198323c0
+
+### DELETE VIDEO
+DELETE http://localhost:5000/videos/5f810077ea69c100198323c0
+
+### UPDATE
+PUT http://localhost:5000/videos/5f8100a4ea69c100198323c1
+Content-Type: application/json
+
+{
+  "title": "Hello updated"
+}
